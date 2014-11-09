@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp" >
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View All Streams"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:id="@+id/header"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"/>
+
+    <GridView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gridView"
+        android:numColumns="4"
+        android:layout_below="@+id/header" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/search"
+            android:hint="Find Streams:">
+        </EditText>
+
+        <ImageButton
+            android:id="@+id/nearByStreams"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/nearby"
+            android:scaleType="center"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            android:layout_alignParentRight="true"
+            android:layout_above="@+id/mySubscribedStreams" />
+
+        <Button android:text="Search" android:id="@+id/search"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_above="@+id/mySubscribedStreams"
+            android:layout_weight="1" />
+        <Button android:text="My Subscribed Streams" android:id="@+id/mySubscribedStreams"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_above="@+id/bottomSpace"
+            android:layout_weight="1" />
+        <Space android:id="@+id/bottomSpace"
+            android:layout_height="10px"
+            android:layout_width="fill_parent"
+            android:layout_alignParentBottom="true" />
+
+
+</RelativeLayout>

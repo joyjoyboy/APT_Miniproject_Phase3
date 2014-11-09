@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.connexus.yzhao.connexus.Main">
+
+    <TextView
+        android:text="Login:"
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:paddingBottom="10dp" />
+
+    <EditText
+        android:id="@+id/gmailID"
+        android:hint="Gmail ID"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_below="@id/login"
+        android:paddingBottom="10dp" />
+
+    <EditText
+        android:id="@+id/gmailPassword"
+        android:hint="Gmail Password"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:password="true"
+        android:layout_below="@id/gmailID" />
+
+    <Space
+        android:layout_height="30dp"
+        android:layout_width="fill_parent"
+        android:id="@+id/paddingSpace"
+        android:layout_below="@id/gmailPassword"/>
+
+    <Button
+        android:id="@+id/userLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textSize="20dp"
+        android:layout_below="@id/paddingSpace"
+        android:paddingTop="10dp" />
+
+    <Button
+        android:id="@+id/viewStreams"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Streams"
+        android:textSize="20dp"
+        android:layout_below="@id/userLogin"
+        android:paddingTop="10dp" />
+
+</RelativeLayout>

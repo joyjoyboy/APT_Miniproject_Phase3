@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload an Image"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:id="@+id/header"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+    <Space android:id="@+id/paddingSpace1"
+        android:layout_height="5dp"
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/header" />
+
+    <Button android:text="Choose from your library" android:id="@+id/chooseFromLibrary"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/paddingSpace1"
+        android:layout_weight="1" />
+
+    <Space android:id="@+id/paddingSpace2"
+        android:layout_height="5dp"
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/chooseFromLibrary" />
+
+    <Button android:text="Use camera" android:id="@+id/useCamera"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/paddingSpace2"
+        android:layout_weight="1" />
+
+    <Space android:id="@+id/paddingSpace3"
+        android:layout_height="5dp"
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/useCamera" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/paddingSpace3"
+        android:hint="Add a message and/or tags">
+    </EditText>
+
+    <Space android:id="@+id/paddingSpace4"
+        android:layout_height="5dp"
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/editText" />
+
+    <ImageView android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/paddingSpace4" />
+
+    <Button android:text="Upload" android:id="@+id/upload"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_weight="1" />
+
+    <Space android:id="@+id/paddingSpace5"
+        android:layout_height="5dp"
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/upload" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stream: "
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:id="@+id/streamName"
+        android:layout_below="@+id/paddingSpace5" />
+
+</RelativeLayout>

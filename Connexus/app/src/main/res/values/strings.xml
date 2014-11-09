@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Connexus</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="landscape_message">This is Landscape mode fragment</string>
+    <string name="title_activity_view_all_streams">ViewAllStreams</string>
+    <string name="title_activity_main">Main</string>
+    <string name="title_activity_view_nearby_streams">ViewNearbyStreams</string>
+    <string name="title_activity_view_single_streams">ViewSingleStreams</string>
+    <string name="title_activity_uploader">Uploader</string>
+    <string name="title_activity_search_result">SearchResult</string>
+    <string name="title_activity_camera">Camera</string>
+    <string name="title_activity_view_single_img">ViewSingleImg</string>
+    <string name="title_activity_my_subscribed_streams">MySubscribedStreams</string>
+
+</resources>

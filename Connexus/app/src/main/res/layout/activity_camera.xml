@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Take a picture"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:id="@+id/header"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+    <Space android:id="@+id/paddingSpace1"
+        android:layout_height="30px"
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/header" />
+
+    <ImageView android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/paddingSpace1"
+        android:layout_centerHorizontal="true"/>
+
+    <Space android:id="@+id/paddingSpace2"
+        android:layout_height="30px"
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/imageView" />
+
+    <Button android:text="Take a picture" android:id="@+id/takePicture"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/paddingSpace2"
+        android:layout_weight="1" />
+
+    <Button android:text="Use this picture" android:id="@+id/usePicture"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/paddingSpace2"
+        android:layout_toRightOf="@+id/takePicture"
+        android:layout_weight="1" />
+
+    <Space android:id="@+id/paddingSpace3"
+        android:layout_height="30px"
+        android:layout_width="fill_parent"
+        android:layout_above="@+id/streams" />
+
+
+    <Button android:text="Streams" android:id="@+id/streams"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_above="@+id/paddingSpace5"
+        android:layout_weight="1" />
+
+    <Space android:id="@+id/paddingSpace5"
+        android:layout_height="10px"
+        android:layout_width="fill_parent"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>
